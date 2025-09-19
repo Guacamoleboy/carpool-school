@@ -344,6 +344,222 @@ a:hover {
     display: none;
 }
 
+.login-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #3B32C0;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    border: 2px solid #e2b70a;
+    max-width: 400px;
+    width: 90%;
+}
+
+.login-container h2 {
+    color: #e2e2e2;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.login-container h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #e2b70a;
+    margin: 0.5rem auto 0 auto;
+    border-radius: 2px;
+}
+
+.login-container input {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem !important;
+    padding: 0.5rem 0 !important;
+    text-align: center !important;
+    border: 2px solid #464646;
+    outline: none;
+    background-color: #ebebeb;
+    color: #3b3b3b;
+    caret-color: transparent;
+}
+
+.login-container input:focus {
+    border: 3px solid #e2b70a !important;
+    box-shadow: none !important;
+}
+
+.login-btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.login-btn-group .guac-btn {
+    flex: 1;
+}
+
+.login-container select {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem !important;
+    padding: 0.5rem 0 !important;
+    text-align: center !important;
+    border: 2px solid #464646;
+    outline: none;
+    background-color: #ebebeb;
+    color: #3b3b3b;
+    appearance: none;          
+    -webkit-appearance: none; 
+    -moz-appearance: none;     
+}
+
+.login-container select:focus {
+    border: 3px solid #e2b70a !important;
+    box-shadow: none !important;
+}
+
+.booking-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.booking-row select,
+.booking-row .guac-btn-find {
+    flex: 1;
+    height: 3rem;               
+    padding: 0 1rem;           
+    font-size: 1rem;           
+    border-radius: 2rem;       
+    border: 2px solid #464646;
+    background-color: #ebebeb;
+    color: #3b3b3b;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.booking-row .guac-btn-find {
+    background-color: #e2b70a;
+    font-weight: bold;
+    border: 2px solid #e4a111;
+}
+
+.bubble {
+    position: fixed;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+    z-index: 1;
+    animation: fadeOut 3s ease-out forwards;
+}
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+}
+
+body.dark-mode .darkmode-btn {
+    background-color: #1e2a5f; 
+    color: #fff;
+    border: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.darkmode-btn:hover {
+    background-color: #2b3a8c; 
+}
+
+.darkmode-btn-floating {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 9999;
+    background-color: #1e2a5f;
+    border-top: 2px solid #4e5481;
+    border-left: 2px solid #4e5481;
+    border-bottom: 2px solid #4e5481;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    box-shadow: -3px 3px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    writing-mode: vertical-rl; 
+    text-orientation: mixed;
+}
+
+body.dark-mode .darkmode-btn-floating {
+    background-color: #686faf;
+    border-top: 2px solid #4e5481;
+    border-left: 2px solid #4e5481;
+    border-bottom: 2px solid #4e5481;
+    border-right: none;
+}
+
+.darkmode-btn-floating:hover {
+    background-color: #2b3a8c;
+    transform: translateY(-50%) scale(1.05);
+}
+
+body.dark-mode .darkmode-btn-floating:hover {
+    background-color: #50508a;
+}
+
+.scroll-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 20px;
+    background-color: #373757;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    opacity: 0;            
+    pointer-events: none;   
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.scroll-btn.show {
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.scroll-btn:hover {
+    background-color: #f8b600;
+    transition: all 0.3s ease;
+}
+
 /* ___________________________________________________________ */
 
                       /* RESPONSIVE */ 

@@ -10,3 +10,14 @@ window.addEventListener('DOMContentLoaded', () => {
     select.value = '';
     input.value = '';     
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    const bookingForm = document.getElementById('bookingForm');
+    if (bookingForm) {
+        const inputs = bookingForm.querySelectorAll('input');
+        const selects = bookingForm.querySelectorAll('select');
+
+        inputs.forEach(input => input.value = '');
+        selects.forEach(select => select.value = '');
+    }
+});

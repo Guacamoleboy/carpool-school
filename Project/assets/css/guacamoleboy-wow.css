@@ -38,6 +38,10 @@
   animation: guacSlideInLeft 1s forwards;
 }
 
+.guac-slide-in-right.guac-visible {
+  animation: guacSlideInRight 1s forwards;
+}
+
 .guac-bounce.guac-visible {
   animation: guacBounce 1s forwards;
 }
@@ -138,6 +142,11 @@
 
 @keyframes guacSlideInLeft {
   from { opacity: 0; transform: translateX(-100%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes guacSlideInRight {
+  from { opacity: 0; transform: translateX(100%); }
   to { opacity: 1; transform: translateX(0); }
 }
 

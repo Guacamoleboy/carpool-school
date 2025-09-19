@@ -32,25 +32,32 @@
     <button id="darkModeToggle" class="darkmode-btn-floating" title="Skift tema"></button>
     <!-- Darkmode button End -->
 
-    <!-- Login Section Start -->
+    <!-- Opret Booking Start -->
     <section class="login-section-1">
         <div class="login-container">
-            <h2>Log Ind</h2>
-            <form id="loginForm">
-                <input type="text" placeholder="Brugernavn" required>
-                <input type="password" placeholder="Adgangskode" required>
-                <div class="login-btn-group">
-                    <button type="submit" class="guac-btn guac-btn-find" onclick="window.location.href='../index.html'">
-                        Log Ind
-                    </button>
-                    <button type="button" class="guac-btn guac-btn-orange" id="registerBtn" onclick="window.location.href='../register/register.html'">
-                        Opret Bruger
+            <h2>Opret ny booking</h2>
+            <form id="bookingForm">
+                <input type="text" placeholder="Sted" required>
+                <input type="text" placeholder="Dato" required>
+                <input type="text" placeholder="Tid" required>
+                <input type="text" placeholder="Ledige Pladser" required>
+
+                <!-- Flex container til select + knap -->
+                <div class="booking-row">
+                    <select name="bookingType" required>
+                        <option value="" disabled selected hidden>Vælg type</option>
+                        <option value="ud">Ud</option>
+                        <option value="hjem">Hjem</option>
+                        <option value="turretur">Tur/retur</option>
+                    </select>
+                    <button type="submit" class="guac-btn guac-btn-find">
+                        Opret booking!
                     </button>
                 </div>
             </form>
         </div>
     </section>
-    <!-- Login Section End -->
+    <!-- Opret Booking End -->
 
     <!-- Scripts without "defer" loads on website load -->
     <script src="../assets/js/guacamoleboy-wow.js"></script>

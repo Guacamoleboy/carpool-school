@@ -17,6 +17,7 @@
     <link rel="apple-touch-icon" href="assets/images/icons/tur-retur.png">
 
     <!-- CSS Load -->
+    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0.min.css">
     <link rel="stylesheet" href="assets/css/main-css.css">
     <link rel="stylesheet" href="assets/css/guacamoleboy-wow.css">
     <link rel="stylesheet" href="assets/css/guacamoleboy-framework.css">
@@ -26,7 +27,15 @@
     <!-- <script src="assets/js/guacamoleboy-wow.js" defer></script> -->
 
 </head>
-<body>
+<body class="dark-mode">
+
+    <!-- Darkmode button Start -->
+    <button id="darkModeToggle" class="darkmode-btn-floating" title="Skift tema"></button>
+    <!-- Darkmode button End -->
+
+    <!-- Scroll-to-Top Button Start -->
+    <button id="scrollToTopBtn" class="scroll-btn" onclick="scrollToSection()"><i class="fa fa-arrow-up"></i></button>
+    <!-- Scroll-to-Top Button End -->
 
     <!-- Header Start -->
     <section>
@@ -37,13 +46,13 @@
                 </a>
             </div>
             <ul class="guac-navbar-links guac-d-flex guac-gap-4 guac-m-0 guac-align-center">
-                <li><a href="#">Book</a></li>
+                <li><a href="minside/minside.html">Min Side</a></li>
                 <li><a href="#">Anmeldelser</a></li>
                 <li><a href="#">Rewards</a></li>
                 <li><a href="#">Stats</a></li>
                 <li><a href="#">Om</a></li>
                 <li><a href="#">Kontakt</a></li>
-                <li><a href="#" class="guac-btn guac-btn-orange">Log Ind</a></li>
+                <li><a href="login/login.html" class="guac-btn guac-btn-orange">Log Ind</a></li>
             </ul>
         </nav>
     </section>
@@ -60,7 +69,7 @@
         <div class="guac-mobile-overlay" id="mobileOverlay">
             <button class="guac-menu-btn close-btn">&#10005;</button>
             <ul class="guac-navbar-mobile-links">
-                <li><a href="#">Book</a></li>
+                <li><a href="minside/minside.html">Min Side</a></li>
                 <li><a href="#">Anmeldelser</a></li>
                 <li><a href="#">Rewards</a></li>
                 <li><a href="#">Stats</a></li>
@@ -77,7 +86,7 @@
     <section class="section-1">
         <div class="guac-container guac-pt-5">
             <div class="guac-row guac-grid">
-                <div class="initial-left">
+                <div class="initial-left guac-animate guac-slide-in-left">
                     <h2>
                         Skriv din destination,<br>så klarer vi resten!
                     </h2>
@@ -92,7 +101,7 @@
                         <button type="button" class="guac-btn guac-btn-find" id="findBtn">Find tur</button>
                     </div>
                 </div>
-                <div class="initial-right">
+                <div class="initial-right guac-animate guac-slide-in-right">
                     <img src="assets/images/page-assets/initial-bornholm2.png" alt="Bornholm">
                 </div>
             </div>
@@ -108,11 +117,11 @@
         <div class="guac-container guac-pt-5">
             <div class="guac-row">
                 <div class="guac-col-12">
-                    <h2 class="blockquote-bottom-orange center-line">
+                    <h2 class="blockquote-bottom-orange center-line guac-animate guac-zoom-in">
                         Hvorfor os?
                     </h2>
                 </div>
-                <div class="guac-col-auto guac-mb-5">
+                <div class="guac-col-auto guac-mb-5 guac-animate guac-zoom-in">
                     <p class="ib section-2-text">
                         Dansk virksomhed med sikkerhed i top. Alle vores medlemmer
                         og chauffører er verificerede med Mit-ID.
@@ -120,19 +129,19 @@
                 </div>
             </div>
             <div class="guac-grid">
-                <div>
+                <div class="guac-animate guac-slide-in-left">
                     <h2>Verifikation</h2>
                     <div class="guac-card">
                         <img src="assets/images/page-assets/section2-1.png" alt="Verifikation">
                     </div>
                 </div>
-                <div>
+                <div class="guac-animate guac-zoom-in">
                     <h2>Dansk</h2>
                     <div class="guac-card">
                         <img src="assets/images/page-assets/section2-2.png" alt="Dansk">
                     </div>
                 </div>
-                <div>
+                <div class="guac-animate guac-slide-in-right">
                     <h2>Spar penge</h2>
                     <div class="guac-card">
                         <img src="assets/images/page-assets/section2-3.png" alt="Spar Penge">
@@ -149,7 +158,7 @@
     <!-- Why us End -->
 
     <!-- Footer Start -->
-    <section class="section-3 guac-pt-5 guac-pb-5">
+    <section class="section-3 guac-pt-5 guac-pb-5 guac-animate guac-zoom-in">
         <div class="guac-container">
             <div class="guac-row guac-justify-between">
                 <div class="guac-col-auto footer-col">
@@ -198,6 +207,8 @@
     <script src="assets/js/placeholder-reload.js"></script>
     <script src="assets/js/error-input.js"></script>
     <script src="assets/js/mobile-nav.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/button-to-top.js"></script>
 
 </body>
 </html>
