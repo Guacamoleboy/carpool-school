@@ -1,0 +1,213 @@
+<!--
+
+    Starter.html made by Guacamoleboy
+          Feel free to use it
+        No need to credit me :/
+
+             Remove this
+
+-->
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8"> <!-- ÆØÅ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- In case some nerd uses Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile Responsiveness -->
+    <meta name="description" content="Yea ngl I hate life. Let's get it!"> <!-- SEO / Google -->
+    <meta name="author" content="Guacamoleboy"> <!-- Author of Website -->
+
+    <!-- Visuals -->
+    <title>Starter Template</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="apple-touch-icon" href="#">
+
+    <!-- CSS Load -->
+    <link rel="stylesheet" href="assets/css/main-css.css">
+    <link rel="stylesheet" href="assets/css/guacamoleboy-wow.css">
+    <link rel="stylesheet" href="assets/css/guacamoleboy-framework.css">
+    <link rel="stylesheet" href="assets/css/guacamoleboy-animations.css">
+
+    <!-- Scripts can also be loaded here with defer -->
+    <!-- <script src="assets/js/guacamoleboy-wow.js" defer></script> -->
+
+</head>
+<body>
+
+    <!-- Header Start -->
+    <section>
+        <nav class="guac-navbar guac-d-flex guac-justify-between guac-align-center guac-p-3 guac-animate guac-slide-down">
+            <div class="guac-navbar-brand guac-fs-5 guac-fw-bold">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo2-svg.svg" alt="Logo" class="guac-logo">
+                </a>
+            </div>
+            <ul class="guac-navbar-links guac-d-flex guac-gap-4 guac-m-0 guac-align-center">
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Anmeldelser</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">Stats</a></li>
+                <li><a href="#">Om</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#" class="guac-btn guac-btn-orange">Log Ind</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!-- Header End -->
+
+    <!-- Mobile Nav Start -->
+    <nav class="guac-navbar-mobile">
+        <div class="guac-navbar-mobile-inner">
+            <button class="guac-menu-btn">&#9776;</button>
+            <img src="assets/images/logo/logo2-svg.svg" alt="Logo" class="guac-logo">
+        </div>
+
+        <!-- Fullscreen overlay menu -->
+        <div class="guac-mobile-overlay" id="mobileOverlay">
+            <button class="guac-menu-btn close-btn">&#10005;</button>
+            <ul class="guac-navbar-mobile-links">
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Anmeldelser</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">Stats</a></li>
+                <li><a href="#">Om</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#" class="guac-btn guac-btn-orange">Log Ind</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Nav End -->
+
+
+    <!-- Initial Section Start -->
+    <section class="section-1">
+        <div class="guac-container guac-pt-5">
+            <div class="guac-row guac-grid">
+                <div class="initial-left">
+                    <h2>
+                        Skriv din destination,<br>så klarer vi resten!
+                    </h2>
+                    <div class="initial-input guac-align-self-center">
+                        <input type="text" class="guac-mr-1" id="inputDest" name="inputDest" placeholder="Fx Rønne..." required>
+                        <select id="selectOption" name="selectOption" class="guac-mr-1" required>
+                            <option value="" disabled selected hidden>Vælg</option>
+                            <option value="hotel">Ud</option>
+                            <option value="oplevelse">Hjem</option>
+                            <option value="transport">Tur/retur</option>
+                        </select>
+                        <button type="button" class="guac-btn guac-btn-find" id="findBtn">Find tur</button>
+                    </div>
+                </div>
+                <div class="initial-right">
+                    <img src="assets/images/page-assets/initial-bornholm2.png" alt="Bornholm">
+                </div>
+            </div>
+        </div>
+        <div class="wave">
+            <img src="assets/images/svg/waves/background-wave-top.svg" alt="Wave Divider">
+        </div>
+    </section>
+    <!-- Initial Section End -->
+
+    <!-- Why us Start -->
+    <section class="section-2">
+        <div class="guac-container guac-pt-5">
+            <div class="guac-row">
+                <div class="guac-col-12">
+                    <h2 class="blockquote-bottom-orange center-line">
+                        Hvorfor os?
+                    </h2>
+                </div>
+                <div class="guac-col-auto guac-mb-5">
+                    <p class="ib section-2-text">
+                        Dansk virksomhed med sikkerhed i top. Alle vores medlemmer
+                        og chauffører er verificerede med Mit-ID.
+                    </p>
+                </div>
+            </div>
+            <div class="guac-grid">
+                <div>
+                    <h2>Verifikation</h2>
+                    <div class="guac-card">
+                        <img src="assets/images/page-assets/section2-1.png" alt="Verifikation">
+                    </div>
+                </div>
+                <div>
+                    <h2>Dansk</h2>
+                    <div class="guac-card">
+                        <img src="assets/images/page-assets/section2-2.png" alt="Dansk">
+                    </div>
+                </div>
+                <div>
+                    <h2>Spar penge</h2>
+                    <div class="guac-card">
+                        <img src="assets/images/page-assets/section2-3.png" alt="Spar Penge">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wave guac-mt-5">
+            <img src="assets/images/svg/waves/background-wave-bottom.svg" alt="Wave Divider">
+        </div>
+
+    </section>
+    <!-- Why us End -->
+
+    <!-- Footer Start -->
+    <section class="section-3 guac-pt-5 guac-pb-5">
+        <div class="guac-container">
+            <div class="guac-row guac-justify-between">
+                <div class="guac-col-auto footer-col">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Om os</a></li>
+                        <li><a href="#">Bliv Chauffør</a></li>
+                        <li><a href="#">Kundeservice</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Book</a></li>
+                    </ul>
+                </div>
+                <div class="guac-col-auto footer-col">
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="guac-col-auto footer-col">
+                    <h3>Jobs</h3>
+                    <ul>
+                        <li><a href="#">Ledige Jobs</a></li>
+                        <li><a href="#">Karriere</a></li>
+                        <li><a href="#">Ansøg nu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
+
+    <!-- Footer Navbar Start -->
+    <section class="footer-navbar guac-d-flex guac-justify-center guac-align-center">
+        <p>
+            Built by Guacamoleboy with 
+            <span style="color:#ffcc00;">&#10084;</span>
+        </p>
+    </section>
+    <!-- Footer Navbar End -->
+
+    <!-- Scripts without "defer" loads on website load -->
+    <script src="assets/js/guacamoleboy-wow.js"></script>
+    <script src="assets/js/placeholder-reload.js"></script>
+    <script src="assets/js/error-input.js"></script>
+    <script src="assets/js/mobile-nav.js"></script>
+
+</body>
+</html>
