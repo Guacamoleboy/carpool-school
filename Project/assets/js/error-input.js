@@ -37,14 +37,12 @@ function showNotification(message, type = 'primary') {
 
     container.appendChild(toast);
 
-    // Giv lidt delay før shake animation
     setTimeout(() => {
         toast.classList.add('guac-shake', 'guac-visible');
     }, 50);
 
     setTimeout(() => {
         toast.style.opacity = '0';
-        // Fjern kun translateX, lad shake animation køre
         setTimeout(() => container.removeChild(toast), 800);
-    }, 3000); // kortere visningstid, shake varer 0.8s
+    }, 3000);
 }
