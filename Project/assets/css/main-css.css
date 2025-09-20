@@ -6,9 +6,20 @@
 
 */
 
+html, body {
+  overflow-y: scroll !important;
+  scrollbar-width: none;   
+  -ms-overflow-style: none;
+}
+
 body {
     background-color: #3B32C0 !important;
     overflow-x: hidden !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; 
 }
 
 .guac-btn-orange {
@@ -135,7 +146,7 @@ a:hover {
 }
 
 .section-2 {
-    background-color: #5C52E9 !important;
+    background-color: #3455B9 !important;
 }
 
 .blockquote-bottom-orange {
@@ -558,6 +569,28 @@ body.dark-mode .darkmode-btn-floating:hover {
 .scroll-btn:hover {
     background-color: #f8b600;
     transition: all 0.3s ease;
+}
+
+.exit-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10000;
+    background-color: #1e2a5f;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.exit-btn:hover {
+    background-color: #f8b600;
+    color: #1e1e1e !important;
+    transform: scale(1.1);
 }
 
 /* ___________________________________________________________ */
