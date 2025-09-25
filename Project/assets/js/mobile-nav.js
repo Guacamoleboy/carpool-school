@@ -4,9 +4,13 @@
 
 // - Guac
 
+// ___________________________________________________________________________________
+
 const openBtn = document.querySelector('.guac-navbar-mobile .guac-menu-btn:not(.close-btn)');
 const closeBtn = document.querySelector('.guac-mobile-overlay .close-btn');
 const overlay = document.getElementById('mobileOverlay');
+
+// ___________________________________________________________________________________
 
 openBtn.addEventListener('click', () => overlay.classList.add('show'));
 closeBtn.addEventListener('click', () => overlay.classList.remove('show'));

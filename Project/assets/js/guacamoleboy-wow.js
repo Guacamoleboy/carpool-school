@@ -11,6 +11,7 @@
 */
 
 document.addEventListener("DOMContentLoaded", function() {
+
   const elements = document.querySelectorAll(".guac-animate");
 
   function isInViewport(el) {
@@ -39,4 +40,5 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("resize", checkAnimations);
 
   checkAnimations();
+  
 });

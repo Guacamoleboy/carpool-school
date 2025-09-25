@@ -3,6 +3,8 @@
 
 // - Guac
 
+// ___________________________________________________________________________________
+
 const toggleBtn = document.getElementById('darkModeToggle');
 const body = document.body;
 
@@ -18,11 +20,15 @@ const setLightMode = () => {
     localStorage.setItem('mode', 'light');
 };
 
+// ___________________________________________________________________________________
+
 if (localStorage.getItem('mode') === 'dark') {
     setDarkMode();
 } else {
     setLightMode(); 
 }
+
+// ___________________________________________________________________________________
 
 toggleBtn.addEventListener('click', () => {
     if (body.classList.contains('dark-mode')) {

@@ -3,6 +3,8 @@
 
 // - Guac
 
+// ___________________________________________________________________________________
+
 window.addEventListener('DOMContentLoaded', () => {
     const select = document.getElementById('selectOption');
     const input = document.getElementById('inputDest');
@@ -10,6 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
     select.value = '';
     input.value = '';     
 });
+
+// ___________________________________________________________________________________
 
 window.addEventListener('DOMContentLoaded', () => {
     const bookingForm = document.getElementById('bookingForm');

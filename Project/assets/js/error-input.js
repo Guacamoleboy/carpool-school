@@ -3,6 +3,8 @@
 
 // - Guac
 
+// ___________________________________________________________________________________
+
 document.getElementById('findBtn').addEventListener('click', function() {
     const input = document.getElementById('inputDest');
     const select = document.getElementById('selectOption');
@@ -28,6 +30,8 @@ document.getElementById('findBtn').addEventListener('click', function() {
         console.log(`Destination: ${input.value}, Valg: ${select.value}`);
     }
 });
+
+// ___________________________________________________________________________________
 
 function showNotification(message, type = 'primary') {
     const container = document.getElementById('guac-notification-container');

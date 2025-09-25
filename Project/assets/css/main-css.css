@@ -1,19 +1,39 @@
 /*
 
-    Made by Guacamoleboy / CPHJL325
-          For School Project
-             Named Carpool
+          Made by Guacamoleboy / CPHJL325
+              For School Project
+                  Named Carpool
 
 */
 
+/* _______________________________________________ */
+
+                    /* Root */
+
+/* _______________________________________________ */
+
+:root {
+    --carpool-background: #3B32C0;
+    --carpool-orange: #e2b70a;
+    --carpool-nav-top: #2C2687;
+    --carpool-main-text: #e2e2e2;
+    /* And so on.. Noone gonna see this project. Not making it full pro  */
+}
+
+/* _______________________________________________ */
+
+             /* Initial Settings */
+
+/* _______________________________________________ */
+
 html, body {
-  overflow-y: scroll !important;
-  scrollbar-width: none;   
-  -ms-overflow-style: none;
+  overflow-y: scroll !important; /* Because we disable scroll visuals - Would be stuck without */ 
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* FireFox Specific Setting */
 }
 
 body {
-    background-color: #3B32C0 !important;
+    background-color: var(--carpool-background) !important; /* Must always use this background color */
     overflow-x: hidden !important;
 }
 
@@ -22,47 +42,49 @@ body::-webkit-scrollbar {
   display: none; 
 }
 
-.guac-btn-orange {
-    background-color: #e2b70a !important;
-    color: #292929 !important;
-    font-weight: bold !important;
-    border-radius: 1rem !important;
-}
-
-.guac-logo {
-  max-height: 3.0rem;
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;  /* No Stretch */
-  display: block;       
-}
-
 a {
     font-weight: bold !important;
 }
 
 a:hover {
-    color: #e2b70a !important;
+    color: var(--carpool-orange) !important;
 }
+
+/* _______________________________________________ */
+
+                 /* Main Navbar */
+
+/* _______________________________________________ */
 
 .guac-navbar {
-    background-color: #2C2687 !important;
-    box-shadow: 0px 5px 3px rgba(22, 22, 22, 0.4);
+    background-color: var(--carpool-nav-top) !important;
+    box-shadow: 0px 5px 3px rgba(22, 22, 22, 0.4); /* Shadow under */
 }
 
-.guac-btn:hover {
-    color: #030303 !important;
-    opacity: 80% !important;
-    transition: all 0.2s ease-in-out;
+/* ___________________________________________________________ */
+
+                     /* Wave Settings */ 
+
+/* ___________________________________________________________ */
+
+.wave img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
+
+/* ___________________________________________________________ */
+
+                     /* Initial Input */ 
+
+/* ___________________________________________________________ */
 
 .initial-left {
   padding-top: 15rem;
 }
 
 .initial-left h2 {
-    color: #e2e2e2 !important;
+    color: var(--carpool-main-text) !important;
 }
 
 .initial-input input {
@@ -109,30 +131,6 @@ a:hover {
   box-shadow: 4px 6px 3px rgba(22, 22, 22, 0.4); /* 3rd option is blurr */
 }
 
-.guac-btn-find {
-    background-color: #e2b70a !important;
-    border-radius: 1rem !important;
-    border: 2px solid #e4a111;
-    font-size: 1.0rem !important;   
-    font-weight: bold !important;   
-    color: #3b3b3b !important; 
-}
-
-.guac-btn-find:focus {
-  border-color: #e2b70a;
-  box-shadow: 4px 6px 3px rgba(22, 22, 22, 0.4); /* 3rd option is blurr */
-}
-
-.guac-btn-find:hover {
-    color: #222222 !important; 
-}
-
-.wave img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .initial-input input::placeholder {
     color: #707070 !important;
 }
@@ -145,25 +143,14 @@ a:hover {
     color: #707070 !important;
 }
 
+/* ___________________________________________________________ */
+
+                      /* Section 2 */ 
+
+/* ___________________________________________________________ */
+
 .section-2 {
     background-color: #3455B9 !important;
-}
-
-.blockquote-bottom-orange {
-    margin: 0 0 1rem 0; /* TOP RIGHT BOTTOM LEFT */
-    color: #e7e7e7 !important;
-    text-align: center;
-    position: relative; 
-    display: block; 
-}
-
-.blockquote-bottom-orange::after {
-    content: "";
-    display: block;
-    width: 10%;               
-    height: 0.25rem;          
-    background-color: #e2b70a;
-    margin: 0.5rem auto 0 auto; 
 }
 
 .section-2 p {
@@ -174,40 +161,11 @@ a:hover {
     margin: 0 auto;         /* Center without messing with my guac-col-auto sizing */
 }
 
-.guac-card {
-    border-radius: 1.0rem !important;
-    background-color: rgba(255, 255, 255, 0.103) !important;
-    box-shadow: 4px 6px 3px rgba(22, 22, 22, 0.2) !important; /* 3rd option is blurr */
-    border: 2px solid #e4a111 !important;
-}
+/* ___________________________________________________________ */
 
-.guac-card:hover {
-    background-color: rgba(48, 48, 48, 0.103) !important;
-    transition: all 0.2s ease-in-out;
-    transform: translateY(-8px) !important;
-}
+                      /* Section 3 */ 
 
-.guac-grid > div { /* Makes sure we only target our wrapper and not the guac-card as that's not what we want.. */
-    text-align: center;
-}
-
-.guac-grid > div h2 { /* Only targets h2 in the direct child (wrapper) of guac-grid-auto */
-    position: relative; 
-    margin-bottom: 3rem; 
-    margin-top: 5rem;
-    font-size: 1.25rem;  
-    color: #ececec;     
-}
-
-.guac-grid > div h2::after {
-    content: "";              
-    display: block;           
-    width: 20%;               
-    height: 3px;              
-    background-color: #e2b70a; 
-    margin: 0.5rem auto 0;   
-    border-radius: 1.0rem;   
-}
+/* ___________________________________________________________ */
 
 .section-3 {
     position: relative;
@@ -256,6 +214,12 @@ a:hover {
     margin: 0;         
 }
 
+/* ___________________________________________________________ */
+
+                      /* Footer Navbar */ 
+
+/* ___________________________________________________________ */
+
 .footer-navbar {
     background-color: #2C2687;
     color: #cccccc;
@@ -269,6 +233,12 @@ a:hover {
     font-weight: 600;
     text-align: center;
 }
+
+/* ___________________________________________________________ */
+
+                       /* Section 1 */ 
+
+/* ___________________________________________________________ */
 
 .section-1 .initial-left h2 {
     text-align: left;
@@ -289,6 +259,12 @@ a:hover {
     content: none !important;
 }
 
+/* ___________________________________________________________ */
+
+              /* Input Error Visuals & Anims */ 
+
+/* ___________________________________________________________ */
+
 .input-error {
   border-color: red !important;
   animation: inputShake 0.5s;
@@ -302,6 +278,12 @@ a:hover {
   80% { transform: translateX(5px); }
   100% { transform: translateX(0); }
 }
+
+/* ___________________________________________________________ */
+
+                       /* Mobile Nav */ 
+
+/* ___________________________________________________________ */
 
 .guac-mobile-overlay {
     position: fixed;
@@ -354,6 +336,12 @@ a:hover {
 .guac-navbar-mobile { /* Hides our mobile navbar from main res */ 
     display: none;
 }
+
+/* ___________________________________________________________ */
+
+                          /* Login */ 
+
+/* ___________________________________________________________ */
 
 .login-section-1 {
     display: flex;
@@ -442,6 +430,12 @@ a:hover {
     box-shadow: none !important;
 }
 
+/* ___________________________________________________________ */
+
+                        /* Booking */ 
+
+/* ___________________________________________________________ */
+
 .booking-row {
     display: flex;
     gap: 0.5rem;
@@ -468,6 +462,12 @@ a:hover {
     border: 2px solid #e4a111;
 }
 
+/* ___________________________________________________________ */
+
+                         /* Bubble */ 
+
+/* ___________________________________________________________ */
+
 .bubble {
     position: fixed;
     border-radius: 50%;
@@ -487,6 +487,12 @@ a:hover {
       transform: scale(1.5);
     }
 }
+
+/* ___________________________________________________________ */
+
+                        /* Darkmode */ 
+
+/* ___________________________________________________________ */
 
 body.dark-mode .darkmode-btn {
     background-color: #1e2a5f; 
@@ -544,6 +550,12 @@ body.dark-mode .darkmode-btn-floating:hover {
     background-color: #50508a;
 }
 
+/* ___________________________________________________________ */
+
+                    /* Scroll Button */ 
+
+/* ___________________________________________________________ */
+
 .scroll-btn {
     position: fixed;
     bottom: 30px;
@@ -571,6 +583,12 @@ body.dark-mode .darkmode-btn-floating:hover {
     transition: all 0.3s ease;
 }
 
+/* ___________________________________________________________ */
+
+                     /* Exit Button */ 
+
+/* ___________________________________________________________ */
+
 .exit-btn {
     position: fixed;
     top: 20px;
@@ -595,17 +613,115 @@ body.dark-mode .darkmode-btn-floating:hover {
 
 /* ___________________________________________________________ */
 
+                      /* Additional */ 
+
+/* ___________________________________________________________ */
+
+.guac-btn-orange {
+    background-color: #e2b70a !important;
+    color: #292929 !important;
+    font-weight: bold !important;
+    border-radius: 1rem !important;
+}
+
+.guac-logo {
+  max-height: 3.0rem;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;  /* No Stretch */
+  display: block;       
+}
+
+.guac-card {
+    border-radius: 1.0rem !important;
+    background-color: rgba(255, 255, 255, 0.103) !important;
+    box-shadow: 4px 6px 3px rgba(22, 22, 22, 0.2) !important; /* 3rd option is blurr */
+    border: 2px solid #e4a111 !important;
+}
+
+.guac-card:hover {
+    background-color: rgba(48, 48, 48, 0.103) !important;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-8px) !important;
+}
+
+.guac-grid > div { /* Makes sure we only target our wrapper and not the guac-card as that's not what we want.. */
+    text-align: center;
+}
+
+.guac-grid > div h2 { /* Only targets h2 in the direct child (wrapper) of guac-grid-auto */
+    position: relative; 
+    margin-bottom: 3rem; 
+    margin-top: 5rem;
+    font-size: 1.25rem;  
+    color: #ececec;     
+}
+
+.guac-grid > div h2::after {
+    content: "";              
+    display: block;           
+    width: 20%;               
+    height: 3px;              
+    background-color: #e2b70a; 
+    margin: 0.5rem auto 0;   
+    border-radius: 1.0rem;   
+}
+
+.blockquote-bottom-orange {
+    margin: 0 0 1rem 0; /* TOP RIGHT BOTTOM LEFT */
+    color: #e7e7e7 !important;
+    text-align: center;
+    position: relative; 
+    display: block; 
+}
+
+.blockquote-bottom-orange::after {
+    content: "";
+    display: block;
+    width: 10%;               
+    height: 0.25rem;          
+    background-color: #e2b70a;
+    margin: 0.5rem auto 0 auto; 
+}
+
+.guac-btn-find {
+    background-color: #e2b70a !important;
+    border-radius: 1rem !important;
+    border: 2px solid #e4a111;
+    font-size: 1.0rem !important;   
+    font-weight: bold !important;   
+    color: #3b3b3b !important; 
+}
+
+.guac-btn-find:focus {
+  border-color: #e2b70a;
+  box-shadow: 4px 6px 3px rgba(22, 22, 22, 0.4); /* 3rd option is blurr */
+}
+
+.guac-btn-find:hover {
+    color: #222222 !important; 
+}
+
+.guac-btn:hover {
+    color: #030303 !important;
+    opacity: 80% !important;
+    transition: all 0.2s ease-in-out;
+}
+
+/* ___________________________________________________________ */
+
                       /* RESPONSIVE */ 
 
 /* ___________________________________________________________ */
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* General logo sizing for smaller screens */
   .guac-logo {
     max-height: 2.5rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) { /* IPhone & under*/
 
     .guac-navbar {
         display: none !important;
